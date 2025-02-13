@@ -26,6 +26,10 @@
             </nav>
         
             <button>solicitar orçamento</button>
+
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <img src="/assets/hamburger.svg">
+            </div>
         </div>
     </header>
 
@@ -86,6 +90,12 @@
     <footer>
         <p>&copy; 2025. wdi. Todos os direitos reservados.</p>
     </footer>
+
+    <script>
+        function toggleMenu() {
+        document.querySelector("nav ul").classList.toggle("active");
+    }
+    </script>
 
 </body>
 </html>
