@@ -155,25 +155,60 @@ nav a:hover::after {
 
 /* Seção destacada */
 .featured {
-    background-color: #ccc;
-    padding: 60px 20px;
+    background-color: #f9f9f9;
+    padding: 80px 20px 40px;
     min-height: 400px;
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    column-gap: 80px;
 }
 
 .featured .container {
     display: flex;
-    max-width: 800px;
-    margin: 0 auto;
-    gap: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 5px;
+}
+.featured .image{
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
+ .featured img {
+    width: 466px;
+    height: 551;
+} 
 
-.featured img {
-    width: 150px;
-    height: 150px;
-    background: #999;
+.featured button{
+    margin-top: 40px;
+    background-color: #F5B60D;
+    border: 2px solid #F5B60D;
+    padding: 10px 16px;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.featured button:hover {
+    background-color: #f9f9f9;
+    border: 2px solid #f5b60d;
+    transition-property: background-color, border-color;
+    transition-duration:.3s;
+}
+
+.featured button>a:hover {
+    color: #f5b60d;
+    transition-property: color;
+    transition-duration:.1s;
+}
+
+.featured button a{
+    color: #464646;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
 }
 
 /* Carrossel */
