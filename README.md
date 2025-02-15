@@ -22,13 +22,13 @@ Atualmente, o projeto está sendo desenvolvido com:
 ## 📂 **Estrutura do Projeto**  
 
 A organização dos arquivos segue a seguinte estrutura:  
-
-📦 wdi-marketing-landing-page │── 📜 README.md # Documentação do projeto
+```
+📦 wdi-lp │── 📜 README.md # Documentação do projeto
 │── 📜 index.html # Estrutura principal da página
 │── 🎨 style.css # Estilos e responsividade
 │── ⚡ script.js # Funcionalidades interativas
 └── 📂 assets # Imagens e elementos gráficos
-
+```
 
 
 ---
@@ -42,15 +42,17 @@ A organização dos arquivos segue a seguinte estrutura:
 
 ---
 
-## 📌 **Como Rodar o Projeto?**  
+## 📌 **Como Rodar o Projeto?**
 
 1️⃣ Clone este repositório:  
-```bash
-git clone https://github.com/seu-usuario/wdi-marketing-landing-page.git
-
+```
+bash
+git clone https://github.com/edrda/wdi-lp.git
+```
 2️⃣ Acesse a pasta do projeto:
-cd wdi-marketing-landing-page
-
+```
+cd wdi-lp
+```
 3️⃣ Abra o arquivo index.html no navegador.
 
 ---
