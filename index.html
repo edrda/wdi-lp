@@ -18,15 +18,19 @@
         </div>
         <div class="hero">
             <nav>
-                <ul>
-                    <li><a href="#">sobre nós</a></li>
-                    <li><a href="#">vantagens</a></li>
-                    <li><a href="#">portifólio</a></li>
-                    <li><a href="#">contato</a></li>
+                <ul>                    
+                    <li><a href="#servicos">serviços</a></li>
+                    <li><a href="#about">sobre nós</a></li>
+                    <li><a href="#vantagens">vantagens</a></li>
+                    <li><a href="#contato">portifólio</a></li>
                 </ul>
             </nav>
         
-            <button>solicitar orçamento</button>
+            <button>
+                <a href="#contato">
+                    solicitar orçamento
+                </a>
+            </button>
 
             <div class="menu-toggle" onclick="toggleMenu()">
                 <img src="/assets/hamburger.svg">
@@ -41,7 +45,7 @@
                 <h1>soluções em artes digitais</h1>
                 <p>de forma moderna e criativa</p>
                 <button>
-                    <a href="#contact">
+                    <a href="#contato">
                         solite um orçamento
                     </a>
                 </button>
@@ -54,7 +58,7 @@
     </section>
 
     <!-- Carrossel -->
-    <section class="services-section">
+    <section id="servicos" class="services-section">
         <!-- Div 1: Texto -->
         <div class="services-text">
             <h2>nós somos wdi<br>nós somos tudo isso</h2>
@@ -71,24 +75,50 @@
             <!-- Adicione mais itens conforme necessário -->
         </div>
     </section>
-    
 
-    <!-- Seção de destaque visual -->
-    <section class="highlight">
+
+    <section class="about" id="about">
+
+        <div class="about-img">  </div>
         <div class="container">
-            <div class="image-group">
-                <img src="placeholder.jpg" alt="Imagem 1">
-                <img src="placeholder.jpg" alt="Imagem 2">
+            <h2>Sobre Nós</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sit amet nibh eget est blandit venenatis non quis leo. Fusce mollis erat ac tortor iaculis porttitor. Nunc mi felis, sagittis sed ligula nec, molestie faucibus arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam eleifend vitae erat vel pellentesque. Sed luctus tellus lorem, sed hendrerit diam semper eu. Aliquam id nibh ac nulla placerat condimentum vel vel arcu. Aenean aliquet nunc vulputate arcu porta, ut tristique quam egestas. Phasellus laoreet est et eros venenatis, nec dictum mauris finibus. Maecenas quis mollis justo, quis consectetur felis.
+            <br>
+            <br>
+            Phasellus euismod sapien lacus, ac dignissim odio fermentum sit amet. Mauris porta posuere velit, quis ullamcorper nisi commodo eu. Maecenas vitae mattis urna.</p>
+        </div>
+    </section>
+
+
+    <!--## destaques ##-->
+
+    <section id="vantagens" class="highlight"> 
+        <div class="cards"> 
+            <!-- Cards -->
+            <div class="card">
+                <div class="card-icon"> 
+                    <img src="/assets/icons/stars.svg" alt="icone de estrelas">
+                </div>
+                <div class="card-content">
+                    <h3> destaque </h3>
+                    <p>sua marca no digital</p>
+                </div>
             </div>
-            <div>
-                <h2>Lorem Ipsum Dolor Sit Amet</h2>
-                <button>Saiba Mais</button>
+
+            <div class="card">
+                <div class="card-icon"> 
+                    <img src="/assets/icons/calendar.svg" alt="icone de calendário">
+                </div>
+                <div class="card-content">
+                    <h3> planejamento </h3>
+                    <p>estratégico e personalizado</p>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Seção de contato -->
-    <section class="contact">
+    <section id="contato" class="contact">
         <h2>Entre em Contato</h2>
         <form>
             <label for="name">Nome</label>
