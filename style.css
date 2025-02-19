@@ -12,6 +12,10 @@ body {
     color: #333;
 }
 
+a{
+    text-decoration: none;
+}
+
 /* Cabeçalho */
 header {
     position: fixed;
@@ -89,7 +93,8 @@ nav a:hover::after {
     gap: 20px;
 }
 
-.hero button {
+.hero button,
+.highlight button {
     background-color: #f9f9f9;
     color: #464646;
     font-weight: 600;
@@ -100,7 +105,8 @@ nav a:hover::after {
     transition: transform 0.3s ease;
 }
 
-.hero button:hover {
+.hero button:hover,
+.highlight button:hover {
     transform: scale(0.96);
     transition-duration: .3s;
     transition-property: transform;
@@ -182,7 +188,8 @@ nav a:hover::after {
     height: 551;
 } 
 
-.featured button{
+.featured button,
+.portfolio button{
     margin-top: 40px;
     background-color: #F5B60D;
     border: 2px solid #F5B60D;
@@ -192,25 +199,29 @@ nav a:hover::after {
     transition: transform 0.3s ease;
 }
 
-.featured button:hover {
+.featured button:hover,
+.portfolio button:hover {
     background-color: #f9f9f9;
     border: 2px solid #f5b60d;
     transition-property: background-color, border-color;
     transition-duration:.3s;
 }
 
-.featured button>a:hover {
+.featured button>a:hover,
+.portfolio button> a:hover{
     color: #f5b60d;
     transition-property: color;
     transition-duration:.1s;
 }
 
-.featured button a{
+.featured button a,
+.portfolio button a{
     color: #464646;
     font-size: 18px;
     font-weight: 600;
     text-decoration: none;
 }
+
 
 /* Carrossel */
 /* Estilizando a seção principal */
@@ -319,18 +330,26 @@ div.about-img {
 
 /* Destaque visual */
 .highlight {
-    background: linear-gradient(107.27deg, #F5B60D 36.45%, #F6E73E 87.52%);
     min-height: 600px;
     padding: 40px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
+    gap: 60px;
+    
+    background: linear-gradient(107.27deg, #F5B60D 36.45%, #F6E73E 87.52%), 
+    url('/assets/logo-bg.png');
+    background-position: center, right;
+    background-size: cover, contain;
+    background-repeat: no-repeat, no-repeat;
 }
 
 .highlight .cards {
-    display: flex;
-    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas */
+    gap: 20px; /* Espaço entre os cards */
+    justify-content: center;
+    align-items: center;
 }
 
 .highlight .card {
@@ -371,6 +390,57 @@ div.about-img {
     text-align: center;
 }
 
+.highlight .card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 36px;    
+    width: 400px;
+    height: 398px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    border: 2px solid #F9F9F9;
+    color: #f9f9f9;
+}
+
+.highlight p {
+    text-align: center;
+}
+
+ /* ## portifolio ## */
+
+ .portfolio {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+.portfolio .main-portfolio {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 460px;
+    margin: 60px 0;
+    gap: 60px;
+
+    width: 88%;
+    background: rgba(245, 182, 13, 0.16);
+    box-shadow: 0px 2px 40px rgba(0, 0, 0, 0.18);
+    border-radius: 20px;
+}
+
+.card-portfolio {
+    width: 480px;
+    height: 340px;
+    background-color: #ccc;
+    border-radius: 8px;
+}
+
+
 /* Seção de contato */
 .contact {
     padding: 40px 20px;
@@ -407,7 +477,7 @@ div.about-img {
 
 /* Rodapé */
 footer {
-    background-color: #333;
+    background-color: #E3A80A;
     color: white;
     text-align: center;
     padding: 20px;
