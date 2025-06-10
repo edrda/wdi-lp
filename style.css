@@ -96,7 +96,6 @@ nav a:hover::after {
 .hero button,
 .highlight button {
     background-color: #f9f9f9;
-    color: #464646;
     font-weight: 600;
     border: none;
     padding: 10px 20px;
@@ -113,6 +112,10 @@ nav a:hover::after {
     animation: ease-in-out;
 }
 
+.hero button a,
+.highlight button a {
+    color: #464646;
+}
 /* responsive menu */
 
 .menu-toggle {
@@ -202,7 +205,6 @@ nav a:hover::after {
 .featured button:hover,
 .portfolio button:hover {
     background-color: #f9f9f9;
-    border: 2px solid #f5b60d;
     transition-property: background-color, border-color;
     transition-duration:.3s;
 }
@@ -216,7 +218,7 @@ nav a:hover::after {
 
 .featured button a,
 .portfolio button a{
-    color: #464646;
+    color: #f9f9f9;
     font-size: 18px;
     font-weight: 600;
     text-decoration: none;
@@ -440,40 +442,104 @@ div.about-img {
     border-radius: 8px;
 }
 
-
 /* Seção de contato */
 .contact {
-    padding: 40px 20px;
-    text-align: center;
+    padding: 80px 20px 0;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    background-image: url(/assets/bg-contato.png);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: auto;
 }
 
-.contact form {
+.contact-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 60px;
+    width: 100%;
+    height: 600px;
+    justify-content: center;
+}
+
+.contact-text {
+    max-width: 400px;
+    color: #464646;
     display: flex;
     flex-direction: column;
-    max-width: 300px;
-    margin: 0 auto;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
-.contact label {
-    text-align: left;
-    margin-top: 10px;
+.contact-text h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    max-width: 93%;
 }
 
-.contact input, 
-.contact textarea {
+.contact-text p {
+    font-size: 16px;
+    font-weight: 400;
+    max-width: 68%;
+}
+
+.contact-form-container {
+    background: linear-gradient(146.75deg, #F5B60D 45.78%, #C08D04 63.89%);
+    padding: 40px 50px;
+    border-radius: 18px;
     width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
+    max-width: 480px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
 }
 
-.contact button {
-    margin-top: 10px;
-    padding: 10px;
-    background-color: #666;
-    color: #fff;
-    border: none;
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
+
+.contact-form input,
+.contact-form textarea {
+    background: none;
+    border: 1px solid #f9f9f9;
+    border-radius: 12px;
+    padding: 12px;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    outline: none;
+    resize: none;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #f9f9f9;
+    font-weight: 500;
+}
+
+
+.contact-form button {
+    margin-top: 10px;
+    padding: 12px;
+    background-color: #fff;
+    color: #F5B60D;
+    font-weight: 600;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.contact-form button:hover {
+    transform: scale(0.96);
+}
+
 
 /* Rodapé */
 footer {
@@ -481,7 +547,6 @@ footer {
     color: white;
     text-align: center;
     padding: 20px;
-    margin-top: 20px;
     font-size: 14px;
     font-weight: 300;
 }
