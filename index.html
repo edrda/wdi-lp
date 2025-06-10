@@ -18,15 +18,19 @@
         </div>
         <div class="hero">
             <nav>
-                <ul>
-                    <li><a href="#">sobre nós</a></li>
-                    <li><a href="#">vantagens</a></li>
-                    <li><a href="#">portifólio</a></li>
-                    <li><a href="#">contato</a></li>
+                <ul>                    
+                    <li><a href="#servicos">serviços</a></li>
+                    <li><a href="#about">sobre nós</a></li>
+                    <li><a href="#vantagens">vantagens</a></li>
+                    <li><a href="#contato">portifólio</a></li>
                 </ul>
             </nav>
         
-            <button>solicitar orçamento</button>
+            <button>
+                <a href="#contato">
+                    solicitar orçamento
+                </a>
+            </button>
 
             <div class="menu-toggle" onclick="toggleMenu()">
                 <img src="/assets/hamburger.svg">
@@ -34,15 +38,15 @@
         </div>
     </header>
 
-    <!-- Seção destacada -->
+    <!-- Seção banner -->
     <section >
         <div class="featured">
             <div class="container">
                 <h1>soluções em artes digitais</h1>
                 <p>de forma moderna e criativa</p>
                 <button>
-                    <a href="#contact">
-                        solite um orçamento
+                    <a href="#contato">
+                        solicite um orçamento
                     </a>
                 </button>
         </div>
@@ -54,46 +58,136 @@
     </section>
 
     <!-- Carrossel -->
-    <section class="carousel">
-        <h2>Galeria de Projetos</h2>
-        <div class="carousel-container">
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
+    <section id="servicos" class="services-section">
+        <!-- Div 1: Texto -->
+        <div class="services-text">
+            <h2>nós somos wdi<br>nós somos tudo isso</h2>
+            <p class="services-subtext">e muito mais...</p>
+        </div>
+    
+        <!-- Div 2: Itens do Carrossel -->
+        <div class="services-carousel" id="servicesCarousel">
+            <div class="service-item"><span>design</span></div>
+            <div class="service-item"><span>social media</span></div>
+            <div class="service-item"><span>id visual</span></div>
+            <div class="service-item"><span>impressão</span></div>
+            <div class="service-item"><span>desenvolvimento</span></div>
+            <!-- Adicione mais itens conforme necessário -->
         </div>
     </section>
 
-    <!-- Seção de destaque visual -->
-    <section class="highlight">
+
+    <section class="about" id="about">
+
+        <div class="about-img">  </div>
         <div class="container">
-            <div class="image-group">
-                <img src="placeholder.jpg" alt="Imagem 1">
-                <img src="placeholder.jpg" alt="Imagem 2">
-            </div>
-            <div>
-                <h2>Lorem Ipsum Dolor Sit Amet</h2>
-                <button>Saiba Mais</button>
-            </div>
+            <h2>Sobre Nós</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sit amet nibh eget est blandit venenatis non quis leo. Fusce mollis erat ac tortor iaculis porttitor. Nunc mi felis, sagittis sed ligula nec, molestie faucibus arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam eleifend vitae erat vel pellentesque. Sed luctus tellus lorem, sed hendrerit diam semper eu. Aliquam id nibh ac nulla placerat condimentum vel vel arcu. Aenean aliquet nunc vulputate arcu porta, ut tristique quam egestas. Phasellus laoreet est et eros venenatis, nec dictum mauris finibus. Maecenas quis mollis justo, quis consectetur felis.
+            <br>
+            <br>
+            Phasellus euismod sapien lacus, ac dignissim odio fermentum sit amet. Mauris porta posuere velit, quis ullamcorper nisi commodo eu. Maecenas vitae mattis urna.</p>
         </div>
     </section>
 
-    <!-- Seção de contato -->
-    <section class="contact">
-        <h2>Entre em Contato</h2>
-        <form>
-            <label for="name">Nome</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">E-mail</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Mensagem</label>
-            <textarea id="message" name="message" required></textarea>
-
-            <button type="submit">Enviar</button>
-        </form>
+ <!-- ## detaques ##  -->
+    <section id="vantagens" class="highlight"> 
+        <div class="cards"> 
+            <div class="card">
+                <div class="card-icon"> 
+                    <img src="/assets/icons/stars.svg" alt="icone de estrelas">
+                </div>
+                <div class="card-content">
+                    <h3> destaque </h3>
+                    <p>sua marca no digital</p>
+                </div>
+            </div>
+    
+            <div class="card">
+                <div class="card-icon"> 
+                    <img src="/assets/icons/calendar.svg" alt="icone de calendário">
+                </div>
+                <div class="card-content">
+                    <h3> planejamento </h3>
+                    <p>estratégico e personalizado</p>
+                </div>
+            </div>
+    
+            <div class="card">
+                <div class="card-icon"> 
+                    <img src="/assets/icons/likes.svg" alt="icone de coração">
+                </div>
+                <div class="card-content">
+                    <h3> engajamento </h3>
+                    <p>maior e direcionado</p>
+                </div>
+            </div>
+    
+            <div class="card">
+                <div class="card-icon"> 
+                    <img src="/assets/icons/grow-graph.svg" alt="icone de gráfico de crescimento">
+                </div>
+                <div class="card-content">
+                    <h3> crescimento </h3>
+                    <p>visível a cada entrega</p>
+                </div>
+            </div>
+        </div>
+        <div class="card-info">
+            <h3> vantagens de contratar a gente </h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel volutpat justo. Nulla facilisi. Integer vel ex non velit tristique luctus. Quisque at dolor vel justo consectetur tempus vel id nunc. </p>
+            
+            <button>
+                <a href="#contato">
+                    solicitar orçamento
+                </a>
+            </button>
+        </div>
     </section>
+
+    <!-- Seção de portfolio -->
+     <section id="portfolio" class="portfolio">
+
+        <div class="main-portfolio">
+            <div class="portfolio-carrossel">
+                <div class="card-portfolio"></div>
+            </div>
+
+            <div class="text-portfolio">
+                <h2>confira o nosso portifólio</h2>
+                <p> e conta pra gente: a wdi arrasa, não é? :D </p>
+                <button>
+                    <a href="#contato">
+                        solicite um orçamento
+                    </a>
+                </button>
+            </div>
+            
+        </div>
+    
+    </section>
+    
+
+   <!-- Seção de contato -->
+    <section id="contato" class="contact">
+        <div class="contact-wrapper">
+            <div class="contact-text">
+                <h2><strong>solicite um orçamento personalizado</strong></h2>
+                <p>vamos juntos transformar a sua ideia em algo muito criativo!</p>
+            </div>
+            
+            <div class="contact-form-container">
+                <form class="contact-form">
+                <input type="text" name="name" placeholder="nome" required />
+                <input type="email" name="email" placeholder="e-mail" required />
+                <input type="tel" name="phone" placeholder="telefone (whatsapp)" required />
+                <input type="text" name="instagram" placeholder="instagram do seu negócio" />
+                <textarea name="message" placeholder="deixe aqui uma mensagem" rows="4" required></textarea>
+                <button type="submit">enviar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+  
 
     <!-- Rodapé -->
     <footer>
@@ -107,4 +201,5 @@
     </script>
 
 </body>
+<script src="script.js" defer></script>
 </html>
