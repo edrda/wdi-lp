@@ -442,8 +442,8 @@ div.about-img {
     margin: 60px 0;
     gap: 60px;
 
-    width: 88%;
-    background: rgba(245, 182, 13, 0.16);
+    width: 60%;
+    background: rgba(245, 182, 13, 0.71);
     box-shadow: 0px 2px 40px rgba(0, 0, 0, 0.18);
     border-radius: 20px;
 }
