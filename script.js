@@ -1,16 +1,23 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const carousel = document.getElementById("servicesCarousel");
-    const items = carousel.children;
-    let speed = 2; // Velocidade do carrossel (ajustável)
-    
-    function startCarousel() {
-        setInterval(() => {
-            // Move o primeiro item para o final da lista
-            let firstItem = items[0];
-            carousel.appendChild(firstItem.cloneNode(true)); // Clona o primeiro item
-            carousel.removeChild(firstItem); // Remove o original
-        }, 2000); // Tempo para mover os itens (ajustável)
-    }
+document.addEventListener("DOMContentLoaded", () => {
+  const track = document.getElementById("servicesTrack");
+  const items = Array.from(track.children);
+  let speed = 0.5; // pixels por frame
+  let position = 0;
 
-    startCarousel();
+  // Clona os itens para criar um loop contínuo
+  items.forEach(item => {
+    const clone = item.cloneNode(true);
+    track.appendChild(clone);
+  });
+
+  function animate() {
+    position -= speed;
+    if (Math.abs(position) >= track.scrollWidth / 2) {
+      position = 0;
+    }
+    track.style.transform = `translateX(${position}px)`;
+    requestAnimationFrame(animate);
+  }
+
+  animate();
 });

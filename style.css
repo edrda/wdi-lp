@@ -233,13 +233,14 @@ nav a:hover::after {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 100px;
-    column-gap: 80px;
+    padding: 0 0 0 16%;
+    column-gap: 40px;
 }
 
 /* Estilizando a área de texto */
 .services-text {
     color: #F9F9F9;
+    width: 20%;
 }
 
 .services-text h2 {
@@ -253,47 +254,55 @@ nav a:hover::after {
     font-style: italic;
 }
 
-/* Estilizando o carrossel */
 .services-carousel {
-    display: flex;
-    gap: 15px;
-    overflow-x: hidden; 
-    padding: 10px 0;
-    scrollbar-width: none;
-    white-space: nowrap;
-    position: relative;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
 }
 
-.services-wrapper {
-    display: flex;
-    gap: 15px;
-    animation: scroll 10s linear infinite; /* Animação contínua */
+.services-track {
+  display: flex;
+  gap: 15px;
+  white-space: nowrap;
+  will-change: transform;
 }
 
-@keyframes scroll {
-    from {
-        transform: translateX(0);
-    }
-    to {
-        transform: translateX(-100%);
-    }
-}
-
-.services-carousel::-webkit-scrollbar {
-    display: none; /* Remove scrollbar no Chrome e Safari */
-}
-
-/* Estilizando os itens do carrossel */
 .service-item {
-    border: 2px solid #F9F9F9;
-    border-radius: 20px;
-    padding: 8px 20px;
-    font-size: 20px;
-    font-weight: 600;
-    color: #F9F9F9;
-    white-space: nowrap; 
-    transition: transform 0.5s ease-in-out;
+  border: 2px solid #F9F9F9;
+  border-radius: 20px;
+  padding: 8px 20px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #F9F9F9;
+  flex-shrink: 0;
+  white-space: nowrap;
 }
+
+
+.services-carousel {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+/* Filtro de esvaecimento nas laterais */
+.services-carousel::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 80px;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.services-carousel::before {
+  left: 0;
+  background: linear-gradient(to right, #E3A80A 0%, transparent 100%);
+}
+
+
+
 
 /*## ABOUT ##*/
 
