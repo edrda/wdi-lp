@@ -454,7 +454,7 @@ div.about-img {
     /* background-color: #ccc;
     border-radius: 8px; */
     background-image: url(/assets/portfolio.png);
-    background-position: center;
+    background-position: center right;
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 12px;
