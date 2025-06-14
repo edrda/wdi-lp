@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>wdi - mídia criativa</title>
     <link rel="stylesheet" href="/style.css">
     <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
-    <meta name="description" content="soluções em artes digitais. solicite agora um orçamento para serviços de social media" />"
+    <meta name="description"
+        content="soluções em artes digitais. solicite agora um orçamento para serviços de social media" />"
 
 </head>
+
 <body>
 
     <!-- Cabeçalho -->
@@ -18,43 +21,39 @@
         </div>
         <div class="hero">
             <nav>
-                <ul>                    
+                <ul>
                     <li><a href="#servicos">serviços</a></li>
                     <li><a href="#about">sobre nós</a></li>
                     <li><a href="#vantagens">vantagens</a></li>
-                    <li><a href="#contato">portifólio</a></li>
+                    <!-- <li><a href="#contato">portifólio</a></li> -->
                 </ul>
             </nav>
-        
-            <button>
-                <a href="#contato">
-                    solicitar orçamento
-                </a>
-            </button>
+
+            <a href="#contato" class="button">
+                solicitar orçamento
+            </a>
 
             <div class="menu-toggle" onclick="toggleMenu()">
-                <img src="/assets/hamburger.svg">
+                <img src="/assets/menu-hamburger.svg">
             </div>
         </div>
     </header>
 
     <!-- Seção banner -->
-    <section >
+    <section id="featured">
         <div class="featured">
             <div class="container">
                 <h1>soluções em artes digitais</h1>
                 <p>de forma moderna e criativa</p>
-                <button>
-                    <a href="#contato">
-                        solicite um orçamento
-                    </a>
-                </button>
+                <a href="#contato" class="button">
+                    solicite um orçamento
+                </a>
+            </div>
+            <div class="image">
+                <img src="/assets/amarelo-e-preto.svg" alt="logo wdi">
+            </div>
         </div>
-        <div class="image">
-            <img src="/assets/amarelo-e-preto.svg" alt="logo wdi">
-        </div>
-        </div>
-        
+
     </section>
 
     <!-- Carrossel -->
@@ -64,41 +63,50 @@
             <h2>nós somos wdi</h2>
             <p class="services-subtext">tudo isso e muito mais...</p>
         </div>
-    
+
         <!-- Div 2: Itens do Carrossel -->
-       <div class="services-carousel" id="servicesCarousel">
+        <div class="services-carousel" id="servicesCarousel">
             <div class="services-track" id="servicesTrack">
                 <div class="service-item"><span>design</span></div>
                 <div class="service-item"><span>social media</span></div>
                 <div class="service-item"><span>id visual</span></div>
                 <div class="service-item"><span>impressão</span></div>
-            <div class="service-item"><span>desenvolvimento</span></div>
-        </div>
+                <div class="service-item"><span>desenvolvimento</span></div>
+            </div>
 
     </section>
 
 
     <section class="about" id="about">
 
-        <div class="about-img">  </div>
+        <div class="about-img"> </div>
         <div class="container">
             <h2>quem somos?</h2>
-            <p>a <strong>wdi</strong> é formada por uma equipe jovem com ampla experiência em criação de peças digitais e posts para redes sociais. com isso, você vai contar com profissionais com sede em inovação e experientes, que estão comprometidos em fornecer soluções eficazes e personalizadas para você e sua marca.
-            <br>
-            <br>
-            nosso principal foco é a criação de posts para as redes sociais, trabalhando de forma estratégica para criar conteúdo relevante e atrativo, que engaje seu público e gere resultados positivos para o seu negócio. utilizamos as melhores ferramentas e técnicas disponíveis no mercado para garantir que seu conteúdo se destaque em meio a um mar de informações.
-            <br>
-            <br>
-            e não para por aí! agora também oferecemos o serviço de desenvolvimento de sites e landing pages, para que sua presença digital seja ainda mais completa. criamos experiências online, funcionais e alinhadas com a identidade da sua marca, ajudando você a comunicar com clareza, atrair mais clientes e gerar ainda mais resultados.
+            <p>a <strong>wdi</strong> é formada por uma equipe jovem com ampla experiência em criação de peças digitais
+                e posts para redes sociais. com isso, você vai contar com profissionais com sede em inovação e
+                experientes, que estão comprometidos em fornecer soluções eficazes e personalizadas para você e sua
+                marca.
+                <br>
+                <br>
+                nosso principal foco é a criação de posts para as redes sociais, trabalhando de forma estratégica para
+                criar conteúdo relevante e atrativo, que engaje seu público e gere resultados positivos para o seu
+                negócio. utilizamos as melhores ferramentas e técnicas disponíveis no mercado para garantir que seu
+                conteúdo se destaque em meio a um mar de informações.
+                <br>
+                <br>
+                e não para por aí! agora também oferecemos o serviço de desenvolvimento de sites e landing pages, para
+                que sua presença digital seja ainda mais completa. criamos experiências online, funcionais e alinhadas
+                com a identidade da sua marca, ajudando você a comunicar com clareza, atrair mais clientes e gerar ainda
+                mais resultados.
             </p>
         </div>
     </section>
 
- <!-- ## detaques ##  -->
-    <section id="vantagens" class="highlight"> 
-        <div class="cards"> 
+    <!-- ## detaques ##  -->
+    <section id="vantagens" class="highlight">
+        <div class="cards">
             <div class="card">
-                <div class="card-icon"> 
+                <div class="card-icon">
                     <img src="/assets/icons/stars.svg" alt="icone de estrelas">
                 </div>
                 <div class="card-content">
@@ -106,9 +114,9 @@
                     <p>sua marca no digital</p>
                 </div>
             </div>
-    
+
             <div class="card">
-                <div class="card-icon"> 
+                <div class="card-icon">
                     <img src="/assets/icons/calendar.svg" alt="icone de calendário">
                 </div>
                 <div class="card-content">
@@ -116,9 +124,9 @@
                     <p>estratégico e personalizado</p>
                 </div>
             </div>
-    
+
             <div class="card">
-                <div class="card-icon"> 
+                <div class="card-icon">
                     <img src="/assets/icons/likes.svg" alt="icone de coração">
                 </div>
                 <div class="card-content">
@@ -126,9 +134,9 @@
                     <p>maior e direcionado</p>
                 </div>
             </div>
-    
+
             <div class="card">
-                <div class="card-icon"> 
+                <div class="card-icon">
                     <img src="/assets/icons/grow-graph.svg" alt="icone de gráfico de crescimento">
                 </div>
                 <div class="card-content">
@@ -139,18 +147,18 @@
         </div>
         <div class="card-info">
             <h3> vantagens de contratar a gente </h3>
-            <p>aqui, a gente cuida da sua marca por completo. criamos <strong>conteúdo de impacto, visual bonito, site funcional</strong> e <strong>planejamento que dá resultado</strong>. tudo com um time criativo, parceiro e pronto pra fazer sua marca acontecer no digital. </p>
-            
-            <button>
-                <a href="#contato">
-                    solicitar orçamento
-                </a>
-            </button>
+            <p>aqui, a gente cuida da sua marca por completo. criamos <strong>conteúdo de impacto, visual bonito, site
+                    funcional</strong> e <strong>planejamento que dá resultado</strong>. tudo com um time criativo,
+                parceiro e pronto pra fazer sua marca acontecer no digital. </p>
+
+            <a href="#contato" class="button">
+                solicitar orçamento
+            </a>
         </div>
     </section>
 
     <!-- Seção de portfolio -->
-     <section id="portfolio" class="portfolio">
+    <!-- <section id="portfolio" class="portfolio">
 
         <div class="main-portfolio">
             <div class="portfolio-carrossel">
@@ -160,39 +168,37 @@
             <div class="text-portfolio">
                 <h2>confira o nosso portifólio</h2>
                 <p> e conta pra gente: a wdi arrasa, não é? :D </p>
-                <button>
-                    <a href="#contato">
+                    <a href="#contato" class="button">
                         solicite um orçamento
                     </a>
-                </button>
             </div>
             
         </div>
     
-    </section>
-    
+    </section> -->
 
-   <!-- Seção de contato -->
+
+    <!-- Seção de contato -->
     <section id="contato" class="contact">
         <div class="contact-wrapper">
             <div class="contact-text">
                 <h2><strong>solicite um orçamento personalizado</strong></h2>
                 <p>vamos juntos transformar a sua ideia em algo muito criativo!</p>
             </div>
-            
+
             <div class="contact-form-container">
                 <form class="contact-form">
-                <input type="text" name="name" placeholder="nome" required />
-                <input type="email" name="email" placeholder="e-mail" required />
-                <input type="tel" name="phone" placeholder="telefone (whatsapp)" required />
-                <input type="text" name="instagram" placeholder="instagram do seu negócio" />
-                <textarea name="message" placeholder="deixe aqui uma mensagem" rows="4" required></textarea>
-                <button type="submit">enviar</button>
+                    <input type="text" name="name" placeholder="nome" required />
+                    <input type="email" name="email" placeholder="e-mail" required />
+                    <input type="tel" name="phone" placeholder="telefone (whatsapp)" required />
+                    <input type="text" name="instagram" placeholder="instagram do seu negócio" />
+                    <textarea name="message" placeholder="deixe aqui uma mensagem" rows="4" required></textarea>
+                    <button type="submit">enviar</button>
                 </form>
             </div>
         </div>
     </section>
-  
+
 
     <!-- Rodapé -->
     <footer>
@@ -201,10 +207,11 @@
 
     <script>
         function toggleMenu() {
-        document.querySelector("nav ul").classList.toggle("active");
-    }
+            document.querySelector("nav ul").classList.toggle("active");
+        }
     </script>
 
 </body>
 <script src="script.js" defer></script>
+
 </html>

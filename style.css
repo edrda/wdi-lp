@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 /* Reset básico */
 * {
     margin: 0;
@@ -12,7 +13,7 @@ body {
     color: #333;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
@@ -22,7 +23,7 @@ header {
     top: 20px;
     left: 50%;
     transform: translateX(-50%);
-    width: 90%; 
+    width: 90%;
     max-width: 1000px;
     max-height: 75px;
     background-color: rgba(245, 182, 13, 0.8);
@@ -39,7 +40,7 @@ header {
     z-index: 99;
 }
 
-header img{
+header img {
     filter: brightness(1.3) contrast(1.1);
     width: 100%;
     max-height: 62px;
@@ -56,15 +57,17 @@ nav a {
     text-decoration: none;
     color: #f9f9f9;
     font-weight: 500;
-    
+
     position: relative;
     transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 150ms;
 }
+
 nav a:hover {
     color: rgb(255 255 255 / 1);
 }
+
 nav a::after {
     position: absolute;
     top: calc(100% + 0.20rem);
@@ -78,8 +81,9 @@ nav a::after {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     content: "";
     transition-duration: 300ms;
-    
+
 }
+
 nav a:hover::after {
     transform-origin: 0% 50%;
     content: "";
@@ -93,8 +97,8 @@ nav a:hover::after {
     gap: 20px;
 }
 
-.hero button,
-.highlight button {
+.hero .button,
+.highlight .button {
     background-color: #f9f9f9;
     font-weight: 600;
     border: none;
@@ -104,18 +108,22 @@ nav a:hover::after {
     transition: transform 0.3s ease;
 }
 
-.hero button:hover,
-.highlight button:hover {
+.hero a.button,
+.highlight a.button {
+    color: #464646;
+}
+
+
+.hero .button:hover,
+.highlight .button:hover {
     transform: scale(0.96);
     transition-duration: .3s;
     transition-property: transform;
     animation: ease-in-out;
 }
 
-.hero button a,
-.highlight button a {
-    color: #464646;
-}
+
+
 /* responsive menu */
 
 .menu-toggle {
@@ -130,7 +138,7 @@ nav a:hover::after {
     .hero {
         flex-direction: column;
         align-items: flex-end;
-        gap: 10px;
+        gap: 0;
     }
 
     nav ul {
@@ -158,7 +166,7 @@ nav a:hover::after {
         display: block;
     }
 
-    .hero button {
+    .hero .button {
         display: none;
     }
 }
@@ -181,18 +189,20 @@ nav a:hover::after {
     justify-content: center;
     gap: 5px;
 }
-.featured .image{
+
+.featured .image {
     display: flex;
     justify-content: center;
     align-items: center;
 }
- .featured img {
-    width: 466px;
-    height: 551;
-} 
 
-.featured button,
-.portfolio button{
+.featured img {
+    width: 466px;
+    height: 551px;
+}
+
+.featured .button,
+.portfolio .button {
     margin-top: 40px;
     background-color: #F5B60D;
     border: 2px solid #F5B60D;
@@ -202,22 +212,22 @@ nav a:hover::after {
     transition: transform 0.3s ease;
 }
 
-.featured button:hover,
-.portfolio button:hover {
+.featured .button:hover,
+.portfolio .button:hover {
     background-color: #f9f9f9;
     transition-property: background-color, border-color;
-    transition-duration:.3s;
+    transition-duration: .3s;
 }
 
-.featured button>a:hover,
-.portfolio button> a:hover{
+.featured a.button:hover,
+.portfolio a.button:hover {
     color: #f5b60d;
     transition-property: color;
-    transition-duration:.1s;
+    transition-duration: .1s;
 }
 
-.featured button a,
-.portfolio button a{
+.featured a.button,
+.portfolio a.button {
     color: #f9f9f9;
     font-size: 18px;
     font-weight: 600;
@@ -255,50 +265,50 @@ nav a:hover::after {
 }
 
 .services-carousel {
-  overflow: hidden;
-  position: relative;
-  width: 100%;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
 }
 
 .services-track {
-  display: flex;
-  gap: 15px;
-  white-space: nowrap;
-  will-change: transform;
+    display: flex;
+    gap: 15px;
+    white-space: nowrap;
+    will-change: transform;
 }
 
 .service-item {
-  border: 2px solid #F9F9F9;
-  border-radius: 20px;
-  padding: 8px 20px;
-  font-size: 20px;
-  font-weight: 600;
-  color: #F9F9F9;
-  flex-shrink: 0;
-  white-space: nowrap;
+    border: 2px solid #F9F9F9;
+    border-radius: 20px;
+    padding: 8px 20px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #F9F9F9;
+    flex-shrink: 0;
+    white-space: nowrap;
 }
 
 
 .services-carousel {
-  overflow: hidden;
-  position: relative;
-  width: 100%;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
 }
 
 /* Filtro de esvaecimento nas laterais */
-.services-carousel::before{
-  content: "";
-  position: absolute;
-  top: 0;
-  width: 80px;
-  height: 100%;
-  z-index: 2;
-  pointer-events: none;
+.services-carousel::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 80px;
+    height: 100%;
+    z-index: 2;
+    pointer-events: none;
 }
 
 .services-carousel::before {
-  left: 0;
-  background: linear-gradient(to right, #E3A80A 0%, transparent 100%);
+    left: 0;
+    background: linear-gradient(to right, #E3A80A 0%, transparent 100%);
 }
 
 
@@ -306,7 +316,7 @@ nav a:hover::after {
 
 /*## ABOUT ##*/
 
-.about{
+.about {
     background-color: #F9F9F9;
     padding: 80px 20px 80px;
     display: flex;
@@ -326,6 +336,7 @@ div.about-img {
     background-repeat: no-repeat;
     border-radius: 12px;
 }
+
 .about .container {
     width: 540px;
     display: flex;
@@ -351,9 +362,9 @@ div.about-img {
     justify-content: center;
     align-items: center;
     gap: 60px;
-    
-    background: linear-gradient(107.27deg, #F5B60D 36.45%, #F6E73E 87.52%), 
-    url('/assets/logo-bg.png');
+
+    background: linear-gradient(107.27deg, #F5B60D 36.45%, #F6E73E 87.52%),
+        url('/assets/logo-bg.png');
     background-position: center, right;
     background-size: cover, contain;
     background-repeat: no-repeat, no-repeat;
@@ -361,8 +372,10 @@ div.about-img {
 
 .highlight .cards {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 colunas */
-    gap: 20px; /* Espaço entre os cards */
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 colunas */
+    gap: 20px;
+    /* Espaço entre os cards */
     justify-content: center;
     align-items: center;
 }
@@ -410,7 +423,7 @@ div.about-img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 36px;    
+    gap: 36px;
     width: 400px;
     height: 398px;
     padding: 20px;
@@ -424,14 +437,14 @@ div.about-img {
     text-align: center;
 }
 
- /* ## portifolio ## */
+/* ## portifolio ## */
 
- .portfolio {
+.portfolio {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
- }
+}
 
 .portfolio .main-portfolio {
     display: flex;
@@ -443,9 +456,14 @@ div.about-img {
     gap: 60px;
 
     width: 60%;
-    background: rgba(245, 182, 13, 0.16);
+    /* background: rgba(245, 182, 13, 0.71); */
+    background-color: #363636;
     box-shadow: 0px 2px 40px rgba(0, 0, 0, 0.18);
     border-radius: 20px;
+}
+
+.text-portfolio{
+    color: #f9f9f9;
 }
 
 .card-portfolio {
@@ -566,4 +584,100 @@ footer {
     padding: 20px;
     font-size: 14px;
     font-weight: 300;
+}
+
+/* Responsividade */
+@media (max-width: 767px) {
+
+    section#featured,
+    .featured,
+    .services-section,
+    .portfolio,
+    .contact,
+    .contact-wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .about, .highlight{
+        flex-direction: column-reverse;
+    }
+
+    .featured {
+        padding-top: 130px;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 0;
+    }
+
+    .featured .container {
+        align-items: center;
+    }
+
+    .featured img {
+        max-width: 360px;
+        height: 422px;
+    }
+
+    .services-section {
+        height: 160px;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 0px;
+    }
+
+    .services-text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .about .container {
+        max-width: fit-content;
+    }
+
+    div.about-img {
+        max-width: 360px;
+        max-height: 240px !important;
+        margin: -90px 0;
+    }
+
+    .highlight .card {
+        max-width: 180px;
+    }
+
+    .highlight .card h3 {
+        font-size: 18px;
+    }
+
+    .highlight .card p {
+        font-size: 14px;
+    }
+
+    .highlight .card,
+    .highlight .card-info {
+        padding: 16px;
+    }
+
+    .highlight .card-info {
+        width: 376px;
+        text-align: center;
+        height: 360px;
+    }
+
+    .portfolio .main-portfolio {
+        flex-direction: column;
+        align-items: center;
+        width: 360px;
+        height: 580px;
+    }
+
+    .card-portfolio {
+        max-width: 360px;
+    }
+
+    .contact-wrapper {
+        padding-bottom: 80px;
+    }
 }
