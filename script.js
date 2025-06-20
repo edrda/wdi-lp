@@ -22,6 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
   animate();
 });
 
+
 // form result
 
 const form = document.getElementById("contactForm");
