@@ -34,7 +34,9 @@
             </a>
 
             <div class="menu-toggle" onclick="toggleMenu()">
-                <img src="/assets/menu-hamburger.svg">
+                <!-- <img src="/assets/menu-hamburger.svg"> -->
+                <img src="/assets/icons/open-menu.png">
+
             </div>
         </div>
     </header>
@@ -187,7 +189,7 @@
             </div>
 
             <div class="contact-form-container">
-                <form class="contact-form">
+                <form class="contact-form" id="contactForm" action="https://formspree.io/f/mwpbnbob" method="POST">
                     <input type="text" name="name" placeholder="nome" required />
                     <input type="email" name="email" placeholder="e-mail" required />
                     <input type="tel" name="phone" placeholder="telefone (whatsapp)" required />
@@ -195,6 +197,7 @@
                     <textarea name="message" placeholder="deixe aqui uma mensagem" rows="4" required></textarea>
                     <button type="submit">enviar</button>
                 </form>
+                <div id="form-result" style="display:none;"></div>
             </div>
         </div>
     </section>
@@ -203,6 +206,12 @@
     <!-- Rodapé -->
     <footer>
         <p>&copy; 2025. wdi. Todos os direitos reservados.</p>
+        <!-- Botão flutuante do WhatsApp -->
+        <a id="whatsapp-button" class="whatsapp-button" href="https://wa.me/message/NEYBBXQNKI6FE1" target="_blank"
+            aria-label="Contato via WhatsApp">
+            <img src="/assets/icons/whatsapp.png" alt="WhatsApp">
+        </a>
+
     </footer>
 
     <script>
