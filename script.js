@@ -21,3 +21,29 @@ document.addEventListener("DOMContentLoaded", () => {
 
   animate();
 });
+
+
+// form result
+
+const form = document.getElementById("contactForm");
+const result = document.getElementById("form-result");
+
+form.addEventListener("submit", async (e) => {
+  e.preventDefault();
+  const formData = new FormData(form);
+  
+  const response = await fetch("https://formspree.io/f/mwpbnbob", {
+    method: "POST",
+    headers: { "Accept": "application/json" },
+    body: formData
+  });
+  
+  if (response.ok) {
+    result.textContent = "✅ Obrigado! Sua mensagem foi enviada com sucesso.";
+    result.style.display = "block";
+    form.reset();
+  } else {
+    result.textContent = "❌ Ocorreu um erro. Por favor, tente novamente.";
+    result.style.display = "block";
+  }
+});
