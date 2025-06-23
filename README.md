@@ -29,7 +29,14 @@ O site foi projetado com **mobile-first** em mente e funciona perfeitamente em t
 
 ---
 
-## 🖼 Mockups / Screenshots
+## 🌐 Acesse Online
+
+🟢 **Deploy ativo em produção:**  
+🔗 [https://somoswdi.vercel.app](https://somoswdi.vercel.app)
+
+---
+
+## 🖼 Mockup
 
 ![Preview da Landing Page](./assets/preview.png)
 
