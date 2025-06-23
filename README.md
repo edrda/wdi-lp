@@ -12,9 +12,19 @@ Atualmente, o projeto está sendo desenvolvido com:
 ✅ **HTML5** → Estrutura semântica e acessível.  
 ✅ **CSS3** → Estilização moderna e responsiva.  
 ✅ **JavaScript (ES6+)** → Interatividade básica.  
+✅ **Formspree** → Integração simples de formulário com e-mail para captação de leads.  
+✅ **Vercel** → Deploy automático.
+
+---
+
+## 📱 **Responsividade**
+
+O site foi projetado com **mobile-first** em mente e funciona perfeitamente em todos os tamanhos de tela. 📲💻
+
+---
 
 📌 **Futuras implementações**:  
-🔹 **React.js** → Para componentes reutilizáveis e maior dinamismo.  
+🔹 **Vue.js** → Para componentes reutilizáveis e maior dinamismo.  
 🔹 **Animações avançadas** → Utilizando bibliotecas como Framer Motion ou GSAP.  
 
 ---
