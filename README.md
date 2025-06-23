@@ -29,7 +29,8 @@ O site foi projetado com **mobile-first** em mente e funciona perfeitamente em t
 
 ---
 
-🖼 Mockups / Screenshots
+## 🖼 Mockups / Screenshots
+
 ![Preview da Landing Page](./assets/preview.png)
 
 ---
