@@ -29,6 +29,11 @@ O site foi projetado com **mobile-first** em mente e funciona perfeitamente em t
 
 ---
 
+🖼 Mockups / Screenshots
+![Preview da Landing Page](./assets/preview.png)
+
+---
+
 ## 📂 **Estrutura do Projeto**  
 
 A organização dos arquivos segue a seguinte estrutura:  
@@ -48,7 +53,9 @@ A organização dos arquivos segue a seguinte estrutura:
 ✅ Desenvolver uma **landing page profissional** para a agência **wdi**.  
 ✅ Aplicar boas práticas de **UX/UI design** e **SEO**.  
 ✅ Aprofundar conhecimentos em **desenvolvimento web** e **autonomia em projetos**.  
-✅ Evoluir a página utilizando **React.js**.  
+✅ Aprofundar conhecimentos em **Vue.js** e componentização.  
+✅ Captar leads com **formulário integrado via Formspree**.  
+✅ Aprimorar a autonomia no desenvolvimento web do zero ao deploy. 
 
 ---
 
@@ -69,7 +76,7 @@ cd wdi-lp
 
 ## 📅 **Próximos Passos**
 - Implementação de animações suaves e interações.
-- Conversão para React.js para maior escalabilidade.
+- Conversão para Vue.js para maior escalabilidade.
 - Otimização para melhor desempenho e SEO.
 - Testes de acessibilidade e responsividade.
 
