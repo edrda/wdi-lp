@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 
+# Sitemap
 Sitemap: https://somoswdi.vercel.app/sitemap.xml
