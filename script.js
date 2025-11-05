@@ -1,10 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
   const track = document.getElementById("servicesTrack");
   const items = Array.from(track.children);
-  let speed = 0.5; // pixels por frame
+  let speed = 0.5; 
   let position = 0;
 
-  // Clona os itens para criar um loop contínuo
   items.forEach(item => {
     const clone = item.cloneNode(true);
     track.appendChild(clone);
