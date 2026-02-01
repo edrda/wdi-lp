@@ -1,97 +1,48 @@
-# 🚀 wdi midia criativa - Landing Page  
+# wdi-lp
 
-Bem-vindo ao repositório da **Landing Page** da agência de marketing **wdi**! 🎯✨  
+This template should help get you started developing with Vue 3 in Vite.
 
-Este projeto tem como objetivo criar uma **landing page moderna, responsiva e interativa**, inicialmente utilizando **HTML, CSS e JavaScript**. Posteriormente, será aprimorado com **React** para adicionar dinamismo e melhorar a experiência do usuário.  
+## Recommended IDE Setup
 
----
+[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
 
-## 🛠 **Tecnologias Utilizadas**  
+## Recommended Browser Setup
 
-Atualmente, o projeto está sendo desenvolvido com:  
-✅ **HTML5** → Estrutura semântica e acessível.  
-✅ **CSS3** → Estilização moderna e responsiva.  
-✅ **JavaScript (ES6+)** → Interatividade básica.  
-✅ **Formspree** → Integração simples de formulário com e-mail para captação de leads.  
-✅ **Vercel** → Deploy automático.
+- Chromium-based browsers (Chrome, Edge, Brave, etc.):
+  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
+  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
+- Firefox:
+  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
+  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
 
----
+## Type Support for `.vue` Imports in TS
 
-## 📱 **Responsividade**
+TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
 
-O site foi projetado com **mobile-first** em mente e funciona perfeitamente em todos os tamanhos de tela. 📲💻
+## Customize configuration
 
----
+See [Vite Configuration Reference](https://vite.dev/config/).
 
-📌 **Futuras implementações**:  
-🔹 **Vue.js** → Para componentes reutilizáveis e maior dinamismo.  
-🔹 **Animações avançadas** → Utilizando bibliotecas como Framer Motion ou GSAP.  
+## Project Setup
 
----
-
-## 🌐 Acesse Online
-
-🟢 **Deploy ativo em produção:**  
-🔗 [https://somoswdi.vercel.app](https://somoswdi.vercel.app)
-
----
-
-## 🖼 Mockup
-
-![Preview da Landing Page](./assets/preview.png)
-
----
-
-## 📂 **Estrutura do Projeto**  
-
-A organização dos arquivos segue a seguinte estrutura:  
-```
-📦 wdi-lp │── 📜 README.md # Documentação do projeto
-│── 📜 index.html # Estrutura principal da página
-│── 🎨 style.css # Estilos e responsividade
-│── ⚡ script.js # Funcionalidades interativas
-└── 📂 assets # Imagens e elementos gráficos
+```sh
+yarn
 ```
 
+### Compile and Hot-Reload for Development
 
----
-
-## 🎯 **Objetivos do Projeto**  
-
-✅ Desenvolver uma **landing page profissional** para a agência **wdi**.  
-✅ Aplicar boas práticas de **UX/UI design** e **SEO**.  
-✅ Aprofundar conhecimentos em **desenvolvimento web** e **autonomia em projetos**.  
-✅ Aprofundar conhecimentos em **Vue.js** e componentização.  
-✅ Captar leads com **formulário integrado via Formspree**.  
-✅ Aprimorar a autonomia no desenvolvimento web do zero ao deploy. 
-
----
-
-## 📌 **Como Rodar o Projeto?**
-
-1️⃣ Clone este repositório:  
+```sh
+yarn dev
 ```
-bash
-git clone https://github.com/edrda/wdi-lp.git
+
+### Type-Check, Compile and Minify for Production
+
+```sh
+yarn build
 ```
-2️⃣ Acesse a pasta do projeto:
+
+### Lint with [ESLint](https://eslint.org/)
+
+```sh
+yarn lint
 ```
-cd wdi-lp
-```
-3️⃣ Abra o arquivo index.html no navegador.
-
----
-
-## 📅 **Próximos Passos**
-- Implementação de animações suaves e interações.
-- Conversão para Vue.js para maior escalabilidade.
-- Otimização para melhor desempenho e SEO.
-- Testes de acessibilidade e responsividade.
-
-
-## 💡 **Considerações Finais**
-Este projeto tem sido uma grande oportunidade de aprendizado e crescimento pessoal e profissional, permitindo que eu desenvolva habilidades essenciais para o mercado de desenvolvimento web. 🚀
-
----
-
-📌 Feito com 💚 e dedicação!
